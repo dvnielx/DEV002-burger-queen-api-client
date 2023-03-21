@@ -10,7 +10,7 @@ const Login = () => {
                 <p className="subtitle">Enter your email and password</p>
                 <form action="/" className="form">
                     <label for="user" className="label">Email</label>
-                    <input type="user" id="user" placeholder="Your name" className="input input-user" />
+                    <input type="user" id="user" placeholder="Your email" className="input input-user" />
                     <label for="password" className="label">Password</label>
                     <input type="password" id="password" placeholder="*********" className="input input-password" />
                     <input type="submit" value="Sign in" className="primary-button login-button" />

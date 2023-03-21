@@ -13,11 +13,11 @@ const App = () => {
         <BrowserRouter>
         <Layout>
             <Routes>
-                    <Route exact path='/' Component={Home} />
-                    <Route exact path='/login' Component={Login} />
-                    <Route exact path='/menu-to-order' Component={MenuToOrder} />
+                    <Route path="/" element={<Home />} />
+          		    <Route path="/login" element={<Login />} />
+                    <Route path='/menu-to-order' element={<MenuToOrder />} />
                     
-                    <Route Component={NotFound} />
+                    <Route path="*" element={<NotFound />} />
             </Routes>
             </Layout>
         </BrowserRouter>
