@@ -2,14 +2,15 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
-import MenuProducts from '../containers/MenuProducts';
+import MenuProducts from '../containers/BurgersMenu';
 import MenuToOrder from '../containers/MenuToOrder';
-import Orders from '../containers/Orders';
-import ReadyToDeliver from '../containers/ReadyToDeliver';
-import Workers from '../containers/Workers';
+import Orders from '../pages/Orders';
+import ReadyToDeliver from '../pages/ReadyToDeliver';
+import Workers from '../pages/Workers';
 import Home from '../pages/Home';
 import NotFound from '../pages/NotFound';
 import '../styles/global.css';
+import Menu from '../pages/Menu';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
             <Routes>
                     <Route path="/" element={<Home />} />
           		    <Route path="/login" element={<Login />} />
+                    <Route path='/menu' element={<Menu />} />
                     <Route path='/menu-to-order' element={<MenuToOrder />} />
                     <Route path='/orders' element={<Orders />} />
                     <Route path='/ready-to-deliver' element={<ReadyToDeliver />} />
