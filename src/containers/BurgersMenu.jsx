@@ -21,7 +21,7 @@ const Burgers = () => {
   const [friesCount, setFriesCount] = useState(0);
 
   return (
-    <div>
+    <div className='burgers-menu'>
       <h2>Burgers Menu</h2>
       <BurgerItem
         name="ShackBurger"

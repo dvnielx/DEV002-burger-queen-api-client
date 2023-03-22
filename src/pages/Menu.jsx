@@ -2,12 +2,14 @@ import React from 'react';
 import '../styles/Menu.scss'
 import Burgers from '../containers/BurgersMenu';
 import Drinks from '../containers/DrinksMenu';
+import Header from '../components/Header';
 
 const Menu = () => {
     return (
         <div>
-            <> <Burgers></Burgers> </>
-           <> <Drinks></Drinks> </>
+             <> <Header></Header> </>
+             <> <Burgers></Burgers> </>
+             <> <Drinks></Drinks> </>
         </div>
     );
 };
