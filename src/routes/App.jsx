@@ -3,7 +3,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from '../containers/Layout';
 import Login from '../pages/Login';
 import MenuProducts from '../containers/BurgersMenu';
-import MenuToOrder from '../containers/MenuToOrder';
 import Orders from '../pages/Orders';
 import ReadyToDeliver from '../pages/ReadyToDeliver';
 import Workers from '../pages/Workers';
@@ -20,7 +19,6 @@ const App = () => {
                     <Route path="/" element={<Home />} />
           		    <Route path="/login" element={<Login />} />
                     <Route path='/menu' element={<Menu />} />
-                    <Route path='/menu-to-order' element={<MenuToOrder />} />
                     <Route path='/orders' element={<Orders />} />
                     <Route path='/ready-to-deliver' element={<ReadyToDeliver />} />
                     <Route path='/workers' element={<Workers />} />

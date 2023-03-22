@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Menu.scss'
 import Burgers from '../containers/BurgersMenu';
 import Drinks from '../containers/DrinksMenu';
 
